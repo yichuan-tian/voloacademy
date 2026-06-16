@@ -1,0 +1,646 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volo Academy</title>
+
+<style>
+    /* Reset default margins */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Top Navigation Bar */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        background: rgba(255, 255, 255);
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        z-index: 1000;
+    }
+
+    /* Logo */
+    .logo img {
+        height: 25px;
+        width: auto;
+        margin-top: 5px;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #666;
+    }
+
+    /* Demo Content */
+    .content {
+        margin-top: 100px;
+        padding: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="IMG_2956.PNG" alt="Volo Academy Logo">
+    </div>
+
+    <div class="nav-links">
+        <a href="#rectangle">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#">Resources</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+<style>
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #666;
+    }
+</style>
+
+<style>
+    .logo
+    {
+        height: 35px;
+        width: auto;
+        margin-bottom: 3px;
+    }
+</style>
+
+
+
+
+
+</style>
+<div class="rectangle" >
+
+    
+
+    <div class="hero-text">
+
+        <p class="caption">
+            Learn Without <span class="rainbow">Limits</span>.
+        </p>
+
+        <p class="subtext">
+            The world's free learning resources, organized into one place.
+        </p>
+
+        <a href="#courses" class="hero-button">
+    Explore Courses
+</a>
+<img src="49B5132A-070E-49BF-AFB1-613F01B22089.PNG" class="glowing">
+    </div>
+
+</div>
+
+<style>
+    .rectangle {
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(22,22,23);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 40px auto;
+    border-radius: 15px;
+    margin-top: 115px;}
+</style>
+<style>
+    .glowing {
+    width: 50px;
+    height: auto;
+    animation: glow 2s infinite alternate;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    align-items: center;
+    }
+
+</style>
+<style>
+    .caption {
+    font-size: 95px;
+    color: white;
+    animation: glow 2s infinite alternate;
+    align-items: center;
+    margin-top:130px;
+    }
+</style>
+
+
+<style>
+    .rainbow {
+    background: linear-gradient(
+        90deg,
+        #ff4d4d,
+        #ffcc00,
+        #00cc66,
+        #3399ff,
+        #aa66ff,
+        #ff4d4d
+    );
+
+    background-size: 200% auto;
+
+    color: transparent;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: rainbowMove 8s linear infinite;
+}
+
+@keyframes rainbowMove{
+    from{
+        background-position: 0% center;
+    }
+
+    to{
+        background-position: 200% center;
+    }
+}
+
+</style>  
+
+<style>
+    body {
+    background-color: #f5f5f7;
+}
+</style>
+
+<style>
+    .hero-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.subtext{
+    color:#a2a2a9;
+    font-size:30px;
+    margin-top:25px;
+    margin-bottom:25px;
+    align-items:center;
+}
+
+.hero-button{
+
+    width:220px;
+    height:55px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:white;
+
+    color:black;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    margin-top:0px;
+
+   
+
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:220px;
+    height:55px;
+
+    background:white;
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:999px;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+.hero-button:hover{
+
+    background:#e5e5e5;
+
+}
+
+
+.hero-button:hover{
+    background:#e5e5e5;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<p class="course list" id="courses">Our Free Courses</p>
+<style>
+    .course.list{
+    font-size:40px;
+    color:black;
+    text-align:center;
+    margin-top:100px;
+}
+</style>
+
+
+
+<section class="courses">
+
+   
+
+    <div class="category">
+
+        <h3>Advanced Placement (AP)</h3>
+
+        <div class="course-grid">
+
+            <a href="apbiology.html" class="course-card" target="_blank">
+    AP Biology
+</a>
+            <a href="apchemistry.html" class="course-card" target="_blank">
+    AP Chemistry
+</a>
+            <a href="apphysics1.html" class="course-card" target="_blank">
+    AP Physics 1
+</a>
+            <a href="apphysics2.html" class="course-card" target="_blank">
+    AP Physics 2
+</a>
+            <a href="apcalculusab.html" class="course-card" target="_blank">
+    AP Calculus AB
+</a>
+            <a href="apcalculusbc.html" class="course-card" target="_blank">
+    AP Calculus BC
+</a>
+            <a href="apstatistics.html" class="course-card" target="_blank">
+    AP Statistics
+</a>
+            <a href="appsychology.html" class="course-card" target="_blank">
+    AP Psychology
+</a>
+            <a href="aphumangeography.html" class="course-card" target="_blank">
+    AP Human Geography
+</a>
+            <a href="apworldhistory.html" class="course-card" target="_blank">
+    AP World History
+</a>
+            <a href="apushistory.html" class="course-card" target="_blank">
+    AP US History
+</a>
+            <a href="apmacroeconomics.html" class="course-card" target="_blank">
+    AP Macroeconomics
+</a>
+            <a href="apmicroeconomics.html" class="course-card" target="_blank">
+    AP Microeconomics
+</a>
+            <a href="apgovernment.html" class="course-card" target="_blank">
+    AP Government
+</a>
+            <a href="apenglishlanguage.html" class="course-card" target="_blank">
+    AP English Language
+</a>
+            <a href="apenglishliterature.html" class="course-card" target="_blank">
+    AP English Literature
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h3>Mathematics</h3>
+
+        <div class="course-grid">
+
+            <a href="prealgebra.html" class="course-card" target="_blank">
+    Pre-Algebra
+</a>
+            <a href="algebra1.html" class="course-card" target="_blank">
+    Algebra I
+</a>
+            <a href="geometry.html" class="course-card" target="_blank">
+    Geometry
+</a>
+            <a href="algebra2.html" class="course-card" target="_blank">
+    Algebra II
+</a>
+            <a href="precalculus.html" class="course-card" target="_blank">
+    Precalculus
+</a>
+            <a href="statistics.html" class="course-card" target="_blank">
+    Statistics
+</a>
+            <a href="calculus.html" class="course-card" target="_blank">
+    Calculus
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h3>Science</h3>
+
+        <div class="course-grid">
+
+            <a href="apbiology.html" class="course-card" target="_blank">
+    AP Biology
+</a>
+            <a href="apchemistry.html" class="course-card" target="_blank">
+    AP Chemistry
+</a>
+            <a href="apphysics1.html" class="course-card" target="_blank">
+    AP Physics 1
+</a>
+            <a href="apphysics2.html" class="course-card" target="_blank">
+    AP Physics 2
+</a>
+            <a href="environmentalscience.html" class="course-card" target="_blank">
+    Environmental Science
+</a>
+            <a href="earthscience.html" class="course-card" target="_blank">
+    Earth Science
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h3>English & Literature</h3>
+
+        <div class="course-grid">
+
+            <a href="english9.html" class="course-card" target="_blank">
+    English 9
+</a>
+            <a href="english10.html" class="course-card" target="_blank">
+    English 10
+</a>
+            <a href="english11.html" class="course-card" target="_blank">
+    English 11
+</a>
+            <a href="english12.html" class="course-card" target="_blank">
+    English 12
+</a>
+            <a href="creativewriting.html" class="course-card" target="_blank">
+    Creative Writing
+</a>
+            <a href="literature.html" class="course-card" target="_blank">
+    Literature
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h3>Social Studies</h3>
+
+        <div class="course-grid">
+
+            <a href="worldhistory.html" class="course-card" target="_blank">
+    World History
+</a>
+            <a href="ushistory.html" class="course-card" target="_blank">
+    US History
+</a>
+            <a href="government.html" class="course-card" target="_blank">
+    Government
+</a>
+            <a href="economics.html" class="course-card" target="_blank">
+    Economics
+</a>
+            <a href="geography.html" class="course-card" target="_blank">
+    Geography
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h3>Languages</h3>
+
+        <div class="course-grid">
+
+            <a href="spanish.html" class="course-card" target="_blank">
+    Spanish
+</a>
+            <a href="french.html" class="course-card" target="_blank">
+    French
+</a>
+            <a href="german.html" class="course-card" target="_blank">
+    German
+</a>
+            <a href="chinese.html" class="course-card" target="_blank">
+    Chinese
+</a>
+            <a href="japanese.html" class="course-card" target="_blank">
+    Japanese
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h3>Test Preparation</h3>
+
+        <div class="course-grid">
+
+            <a href="satmath.html" class="course-card" target="_blank">
+    SAT Math
+</a>
+            <a href="satreading.html" class="course-card" target="_blank">
+    SAT Reading
+</a>
+            <a href="satwriting.html" class="course-card" target="_blank">
+    SAT Writing
+</a>
+            <a href="act.html" class="course-card" target="_blank">
+    ACT
+</a>
+            <a href="psat.html" class="course-card" target="_blank">
+    PSAT
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    .course-card{
+    color:black;
+    text-decoration:none;
+}
+</style>
+
+<style>
+    .courses{
+
+    width:1200px;
+    margin:50px auto;
+    
+}
+
+
+
+.courses h2{
+
+    font-size:48px;
+    text-align:center;
+    margin-bottom:80px;
+
+}
+
+.category{
+
+    margin-bottom:70px;
+
+}
+
+.category h3{
+
+    font-size:30px;
+    margin-bottom:25px;
+
+}
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fill,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.course-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.05);
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.12);
+
+}
+</style>
+
+<style>
+    html{
+    scroll-behavior:smooth;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <p>Volo Academy    |   Learn without limits.
+</p>
+
+
+    <p class="copyright">
+       Copyright © 2026 Volo Academy. All rights reserved.
+    </p>
+
+    <p>United States</p>
+</footer>
+<style>
+    footer{
+    background:#f5f5f7;
+    text-align:center;
+    margin-top:150px;
+    margin-bottom:5px;
+    color: rgb(108,108,108)
+}
