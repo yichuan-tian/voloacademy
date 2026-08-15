@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Volo Academy</title>
+
+<link rel="icon" href="favicon.PNG">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+    color:#1d1d1f;
+
+    background:white;
+
+}
+
+.container{
+
+    width:82%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+
+    background:#f5f5f7;
+
+    padding:90px 0 110px;
+
+}
+
+.about-small{
+
+    font-size:18px;
+
+    color:#86868b;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    font-size:clamp(68px,9vw,110px);
+
+    font-weight:700;
+
+    letter-spacing:-3px;
+
+    line-height:1.05;
+
+    margin-bottom:22px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    color:rgb(150,25,25);
+
+    font-weight:500;
+
+    margin-bottom:40px;
+
+}
+
+.hero p{
+
+    max-width:820px;
+
+    font-size:30px;
+
+    line-height:1.55;
+
+    color:#6e6e73;
+
+}
+
+/* ---------- SECTION ---------- */
+
+.section{
+
+    padding:100px 0;
+
+}
+
+.section-title{
+
+    font-size:52px;
+
+    margin-bottom:50px;
+
+    letter-spacing:-2px;
+
+}
+
+.section-text{
+
+    max-width:920px;
+
+    font-size:25px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+/* ---------- CARDS ---------- */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+    margin-top:70px;
+
+}
+
+.card{
+
+    background:#f5f5f7;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card h3{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+}
+
+/* ---------- OFFER ---------- */
+
+.offer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.offer{
+
+    background:#fafafa;
+
+    border-radius:26px;
+
+    padding:45px;
+
+    transition:.3s;
+
+}
+
+.offer:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.offer h3{
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+}
+
+.offer p{
+
+    font-size:19px;
+
+    line-height:1.7;
+
+    color:#666;
+
+}
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation:fadeUp .9s forwards;
+
+}
+
+.delay1{animation-delay:.15s;}
+.delay2{animation-delay:.3s;}
+.delay3{animation-delay:.45s;}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.offer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="about-small fade">
+
+ABOUT
+
+</div>
+
+<h1 class="fade delay1">
+
+Volo Academy
+
+</h1>
+
+<h2 class="fade delay2">
+
+Learn Without Limits.
+
+</h2>
+
+<p class="fade delay3">
+
+"We belive reciving education is a fundamental human right. 
+<br>
+Education empowers people to understand the world."
+<br>
+<div class="quote-author">
+    — Yichuan Tian
+ </div>
+</p>
+
+<style>
+    .quote-author{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    color:#86868b;
+
+    font-style:italic;
+
+        opacity:0;
+
+    transform:translateY(30px);
+
+    animation:fadeUp .9s forwards;
+
+    animation-delay:.45s;
+
+
+
+}
+</style>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Our Mission
+
+</h2>
+
+<p class="section-text">
+
+Volo Academy exists to remove barriers to education by organizing the world's best free learning resources into one platform. We aim to help students discover, learn, and grow through carefully selected educational content while inspiring lifelong curiosity and independent learning.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+
+Free Education
+
+</h3>
+
+<p>
+
+Every resource we recommend is freely available so every student can learn without financial barriers.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Quality
+
+</h3>
+
+<p>
+
+We carefully select learning materials from trusted educators, universities, and organizations.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Accessibility
+
+</h3>
+
+<p>
+
+Education should be available anytime, anywhere, for everyone.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Curiosity
+
+</h3>
+
+<p>
+
+Learning doesn't end after school. We encourage exploration throughout life.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" style="background:#f5f5f7;">
+
+<div class="container">
+
+<h2 class="section-title">
+
+What We Offer
+
+</h2>
+
+<div class="offer-grid">
+
+<div class="offer">
+
+<h3>Academic Courses</h3>
+
+<p>
+
+Free learning resources for AP courses, mathematics, science, history, languages, SAT preparation, and more.
+
+</p>
+
+</div>
+
+<div class="offer">
+
+<h3>Volo Business School</h3>
+
+<p>
+
+A dedicated collection of business education covering entrepreneurship, economics, investing, finance, leadership, and management.
+
+</p>
+
+</div>
+
+<div class="offer">
+
+<h3>Digital Library</h3>
+
+<p>
+
+Curated online libraries from leading universities and trusted educational institutions around the world.
+
+</p>
+
+</div>
+
+<div class="offer">
+
+<h3>Learning Resources</h3>
+
+<p>
+
+A carefully organized collection of educational platforms, videos, textbooks, and open-access materials.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Message from the Founder
+
+</h2>
+
+<div class="founder-grid">
+
+<div class="founder-text">
+
+<p>
+I believe education is a fundamental human right.
+<br><br>
+My curiosity founded Volo Academy. I wondered: What if there were a free study platform that organized the world's best learning resources in one place? What if students could learn without limits? What if education were available to everyone, everywhere?
+<br><br>
+Your visit told me the answer.
+</p>
+
+<p class="signature">
+
+Yichuan Tian
+
+<br>
+
+<span>
+
+Founder & Chief Executive Officer
+
+</span>
+
+</p>
+
+</div>
+
+<div class="founder-image">
+
+<img src="darkredva.PNG" alt="VA logo">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.founder-grid{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+margin-top:40px;
+
+}
+
+.founder-text p{
+
+font-size:23px;
+
+line-height:1.9;
+
+color:#555;
+
+margin-bottom:28px;
+
+}
+
+.founder-image{
+
+text-align:center;
+
+}
+
+.founder-image img{
+
+width:340px;
+
+max-width:100%;
+
+border: radius 0px;
+
+transition:.35s;
+
+}
+
+.signature{
+
+margin-top:45px;
+
+font-size:34px !important;
+
+font-weight:600;
+
+color:#1d1d1f !important;
+
+line-height:1.4 !important;
+
+}
+
+.signature span{
+
+font-size:19px;
+
+font-weight:400;
+
+color:rgb(150,25,25);
+
+}
+
+@media(max-width:900px){
+
+.founder-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.founder-image{
+
+order:-1;
+
+}
+
+}
+
+</style>
+
+<section class="section" style="background:#f5f5f7;">
+
+<div class="container" style="text-align:center;">
+
+<h2 class="section-title">
+
+Our Vision
+
+</h2>
+
+<p style="
+
+font-size:58px;
+
+font-weight:600;
+
+letter-spacing:-2px;
+
+line-height:1.25;
+
+max-width:900px;
+
+margin:auto;
+
+">
+
+"To become one of the world's most accessible educational platforms, empowering every student to learn without limits."
+
+</p>
+
+<p style="
+
+margin-top:50px;
+
+font-size:24px;
+
+color:#6e6e73;
+
+max-width:850px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+line-height:1.8;
+
+">
+
+We envision a future where quality education is no longer limited by geography, cost, or opportunity. Through openness, innovation, and collaboration, Volo Academy strives to make learning available to anyone with curiosity and an internet connection.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container footer">
+
+<h2>
+
+VOLO ACADEMY
+
+</h2>
+
+<p>
+
+Learn Without Limits.
+
+</p>
+
+<p class="copyright">
+
+© 2026 Volo Academy. Designed and developed by Yichuan Tian.
+
+</p>
+
+</div>
+
+</footer>
+
+<style>
+
+footer{
+
+padding:80px 0;
+
+background:white;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer h2{
+
+font-size:42px;
+
+letter-spacing:-2px;
+
+margin-bottom:18px;
+
+color:rgb(150,25,25);
+
+}
+
+.footer p{
+
+font-size:22px;
+
+color:#6e6e73;
+
+margin-bottom:12px;
+
+}
+
+.copyright{
+
+font-size:16px !important;
+
+margin-top:40px;
+
+color:#999 !important;
+
+}
+
+</style>
+
+</body>
+
+</html>
+
+
+
+
