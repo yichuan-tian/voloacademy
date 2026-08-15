@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Volo Workspace</title>
+
+<link rel="icon" href="favicon.PNG">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:
+-apple-system,
+BlinkMacSystemFont,
+"SF Pro Display",
+"SF Pro Text",
+"Helvetica Neue",
+sans-serif;
+
+background:#fbfbfd;
+color:#1d1d1f;
+
+}
+
+a{
+
+text-decoration:none;
+color:inherit;
+
+}
+
+header{
+
+position:sticky;
+top:0;
+
+height:72px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 70px;
+
+background:rgba(255,255,255,.82);
+
+backdrop-filter:blur(20px);
+
+border-bottom:1px solid #ececec;
+
+z-index:999;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+
+gap:14px;
+
+font-size:24px;
+font-weight:600;
+
+letter-spacing:-.5px;
+
+}
+
+.logo img{
+
+height:34px;
+
+}
+
+.nav{
+
+display:flex;
+
+gap:40px;
+
+font-size:16px;
+
+color:#6e6e73;
+
+}
+
+.nav a:hover{
+
+color:#000;
+
+}
+
+.hero{
+
+padding-top:90px;
+
+padding-bottom:70px;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+font-weight:700;
+
+letter-spacing:-3px;
+
+margin-bottom:18px;
+
+}
+
+.hero p{
+
+font-size:26px;
+
+color:#6e6e73;
+
+line-height:1.6;
+
+}
+
+.search{
+
+margin-top:55px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.search input{
+
+width:720px;
+
+height:60px;
+
+border:none;
+
+outline:none;
+
+padding:0 30px;
+
+font-size:18px;
+
+border-radius:999px;
+
+background:white;
+
+box-shadow:
+
+0 8px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.search input:focus{
+
+box-shadow:
+
+0 15px 45px rgba(0,0,0,.12);
+
+}
+
+.container{
+
+width:min(1400px,92%);
+
+margin:auto;
+
+}
+
+.category{
+
+margin-top:90px;
+
+}
+
+.category h2{
+
+font-size:42px;
+
+letter-spacing:-1px;
+
+margin-bottom:30px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fill,minmax(280px,1fr));
+
+gap:28px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:28px;
+
+padding:28px;
+
+transition:.35s;
+
+box-shadow:
+
+0 8px 24px rgba(0,0,0,.06);
+
+cursor:pointer;
+
+display:block;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.14);
+
+}
+
+.card h3{
+
+font-size:24px;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+color:#6e6e73;
+
+line-height:1.7;
+
+margin-bottom:18px;
+
+}
+
+.tag{
+
+display:inline-block;
+
+padding:7px 13px;
+
+background:#f2f2f7;
+
+border-radius:999px;
+
+font-size:13px;
+
+margin:4px;
+
+color:#555;
+
+}
+
+footer{
+
+margin-top:120px;
+
+padding:60px;
+
+text-align:center;
+
+color:#86868b;
+
+font-size:15px;
+
+}
+
+@media(max-width:900px){
+
+header{
+
+padding:0 25px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+}
+
+.search input{
+
+width:90%;
+
+}
+
+.nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="whiteva.PNG">
+
+<span>Volo Workspace</span>
+
+</div>
+
+<div class="nav">
+
+<a href="index.html">Home</a>
+
+<a href="courses.html">Courses</a>
+
+<a href="resources.html">Resources</a>
+
+<a href="about.html">About</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Volo Workspace</h1>
+
+<p>
+
+Everything you need to study.<br>
+
+One place.
+
+</p>
+
+
+
+</section>
+
+<div class="container">
+
+<!-- ========================= -->
+<!-- RECOMMENDED -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>⭐ Recommended</h2>
+
+<div class="grid">
+
+<a class="card" href="https://www.desmos.com/calculator" target="_blank">
+<h3>📈 Desmos</h3>
+<p>Interactive graphing calculator trusted by millions of students.</p>
+<span class="tag">Calculus</span>
+<span class="tag">Statistics</span>
+<span class="tag">Free</span>
+</a>
+
+<a class="card" href="https://www.symbolab.com" target="_blank">
+<h3>🧮 Symbolab</h3>
+<p>Step-by-step solutions for algebra, calculus, and more.</p>
+<span class="tag">Math</span>
+<span class="tag">Solver</span>
+</a>
+
+<a class="card" href="https://www.wolframalpha.com" target="_blank">
+<h3>⚡ Wolfram Alpha</h3>
+<p>Computational engine for mathematics, science, and engineering.</p>
+<span class="tag">STEM</span>
+<span class="tag">Research</span>
+</a>
+
+<a class="card" href="https://www.khanacademy.org" target="_blank">
+<h3>🎓 Khan Academy</h3>
+<p>Free lessons and practice exercises across dozens of subjects.</p>
+<span class="tag">Learning</span>
+<span class="tag">Free</span>
+</a>
+
+<a class="card" href="https://quizlet.com" target="_blank">
+<h3>🧠 Quizlet</h3>
+<p>Create and study flashcards with multiple learning modes.</p>
+<span class="tag">Flashcards</span>
+</a>
+
+<a class="card" href="https://chat.openai.com" target="_blank">
+<h3>🤖 ChatGPT</h3>
+<p>Ask questions, brainstorm ideas, and get explanations instantly.</p>
+<span class="tag">AI</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ========================= -->
+<!-- MATHEMATICS -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>📈 Mathematics</h2>
+
+<div class="grid">
+
+<a class="card" href="https://www.desmos.com/calculator" target="_blank">
+<h3>Desmos Graphing</h3>
+<p>Interactive graphing calculator.</p>
+<span class="tag">Graphs</span>
+<span class="tag">AP Calc</span>
+</a>
+
+<a class="card" href="https://www.desmos.com/scientific" target="_blank">
+<h3>Desmos Scientific</h3>
+<p>Scientific calculator for everyday math.</p>
+<span class="tag">Calculator</span>
+</a>
+
+<a class="card" href="https://www.desmos.com/matrix" target="_blank">
+<h3>Desmos Matrix</h3>
+<p>Matrix calculator with visualization.</p>
+<span class="tag">Linear Algebra</span>
+</a>
+
+<a class="card" href="https://www.geogebra.org" target="_blank">
+<h3>GeoGebra</h3>
+<p>Graphing, geometry and algebra in one place.</p>
+<span class="tag">Geometry</span>
+<span class="tag">Graphs</span>
+</a>
+
+<a class="card" href="https://www.geogebra.org/geometry" target="_blank">
+<h3>GeoGebra Geometry</h3>
+<p>Interactive geometry workspace.</p>
+<span class="tag">Geometry</span>
+</a>
+
+<a class="card" href="https://www.geogebra.org/calculator" target="_blank">
+<h3>GeoGebra Calculator</h3>
+<p>Scientific and graphing calculator.</p>
+<span class="tag">Calculator</span>
+</a>
+
+<a class="card" href="https://www.mathway.com" target="_blank">
+<h3>Mathway</h3>
+<p>Instant solutions for a wide range of math problems.</p>
+<span class="tag">Solver</span>
+</a>
+
+<a class="card" href="https://matrixcalc.org" target="_blank">
+<h3>MatrixCalc</h3>
+<p>Advanced matrix operations and calculations.</p>
+<span class="tag">Matrices</span>
+</a>
+
+<a class="card" href="https://www.integral-calculator.com/" target="_blank">
+<h3>Integral Calculator</h3>
+<p>Step-by-step integration calculator.</p>
+<span class="tag">Calculus</span>
+</a>
+
+<a class="card" href="https://www.derivative-calculator.net/" target="_blank">
+<h3>Derivative Calculator</h3>
+<p>Derivative solver with explanations.</p>
+<span class="tag">Calculus</span>
+</a>
+
+<a class="card" href="https://www.wolframalpha.com" target="_blank">
+<h3>Wolfram Alpha</h3>
+<p>Powerful computational mathematics engine.</p>
+<span class="tag">Advanced</span>
+</a>
+
+<a class="card" href="https://www.symbolab.com" target="_blank">
+<h3>Symbolab</h3>
+<p>Step-by-step mathematics solutions.</p>
+<span class="tag">Algebra</span>
+<span class="tag">Calculus</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- SCIENCE -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>🔬 Science</h2>
+
+<div class="grid">
+
+<a class="card" href="https://phet.colorado.edu/" target="_blank">
+<h3>PhET Simulations</h3>
+<p>Interactive simulations for Physics, Chemistry, Biology and Math.</p>
+<span class="tag">Simulation</span>
+</a>
+
+<a class="card" href="https://falstad.com/" target="_blank">
+<h3>Falstad</h3>
+<p>Physics simulations and circuit visualizations.</p>
+<span class="tag">Physics</span>
+</a>
+
+<a class="card" href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank">
+<h3>PubChem</h3>
+<p>World's largest chemistry database.</p>
+<span class="tag">Chemistry</span>
+</a>
+
+<a class="card" href="https://www.chemspider.com/" target="_blank">
+<h3>ChemSpider</h3>
+<p>Chemical structures and properties database.</p>
+<span class="tag">Chemistry</span>
+</a>
+
+<a class="card" href="https://molview.org/" target="_blank">
+<h3>MolView</h3>
+<p>3D molecular visualization.</p>
+<span class="tag">Chemistry</span>
+</a>
+
+<a class="card" href="https://ptable.com/" target="_blank">
+<h3>Interactive Periodic Table</h3>
+<p>Modern periodic table with detailed element information.</p>
+<span class="tag">Chemistry</span>
+</a>
+
+<a class="card" href="https://www.biointeractive.org/" target="_blank">
+<h3>HHMI BioInteractive</h3>
+<p>Excellent biology animations and lessons.</p>
+<span class="tag">Biology</span>
+</a>
+
+<a class="card" href="https://www.ncbi.nlm.nih.gov/books/" target="_blank">
+<h3>NCBI Bookshelf</h3>
+<p>Free biomedical textbooks and references.</p>
+<span class="tag">Biology</span>
+</a>
+
+<a class="card" href="https://www.cellimagelibrary.org/" target="_blank">
+<h3>Cell Image Library</h3>
+<p>Microscope images for biology learning.</p>
+<span class="tag">Biology</span>
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- NOTES & WRITING -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>📚 Notes & Writing</h2>
+
+<div class="grid">
+
+<a class="card" href="https://docs.google.com" target="_blank">
+<h3>Google Docs</h3>
+<p>Create essays, notes, and collaborative documents.</p>
+<span class="tag">Writing</span>
+<span class="tag">Free</span>
+</a>
+
+<a class="card" href="https://www.notion.so" target="_blank">
+<h3>Notion</h3>
+<p>All-in-one workspace for notes and organization.</p>
+<span class="tag">Notes</span>
+</a>
+
+<a class="card" href="https://www.onenote.com" target="_blank">
+<h3>Microsoft OneNote</h3>
+<p>Digital notebook for class notes.</p>
+<span class="tag">Notebook</span>
+</a>
+
+<a class="card" href="https://obsidian.md" target="_blank">
+<h3>Obsidian</h3>
+<p>Powerful markdown note-taking app.</p>
+<span class="tag">Knowledge</span>
+</a>
+
+<a class="card" href="https://simplenote.com" target="_blank">
+<h3>Simplenote</h3>
+<p>Lightweight note-taking.</p>
+<span class="tag">Minimal</span>
+</a>
+
+<a class="card" href="https://www.grammarly.com" target="_blank">
+<h3>Grammarly</h3>
+<p>Grammar and writing assistant.</p>
+<span class="tag">English</span>
+</a>
+
+<a class="card" href="https://languagetool.org" target="_blank">
+<h3>LanguageTool</h3>
+<p>Grammar and style checker.</p>
+<span class="tag">Writing</span>
+</a>
+
+<a class="card" href="https://hemingwayapp.com" target="_blank">
+<h3>Hemingway Editor</h3>
+<p>Improve readability and clarity.</p>
+<span class="tag">Essay</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ========================= -->
+<!-- SOCIAL STUDIES -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>🌎 Social Studies</h2>
+
+<div class="grid">
+
+<a class="card" href="https://earth.google.com" target="_blank">
+<h3>Google Earth</h3>
+<p>Explore the world in 3D.</p>
+<span class="tag">Geography</span>
+</a>
+
+<a class="card" href="https://maps.google.com" target="_blank">
+<h3>Google Maps</h3>
+<p>Maps, satellite imagery and street view.</p>
+<span class="tag">Geography</span>
+</a>
+
+<a class="card" href="https://www.arcgis.com" target="_blank">
+<h3>ArcGIS Online</h3>
+<p>Professional GIS mapping platform.</p>
+<span class="tag">AP Human Geography</span>
+</a>
+
+<a class="card" href="https://www.seterra.com" target="_blank">
+<h3>Seterra</h3>
+<p>Interactive geography quizzes.</p>
+<span class="tag">Geography</span>
+</a>
+
+<a class="card" href="https://www.loc.gov" target="_blank">
+<h3>Library of Congress</h3>
+<p>Historical archives and primary sources.</p>
+<span class="tag">History</span>
+</a>
+
+<a class="card" href="https://www.archives.gov" target="_blank">
+<h3>National Archives</h3>
+<p>Official U.S. historical documents.</p>
+<span class="tag">US History</span>
+</a>
+
+<a class="card" href="https://www.worldhistory.org" target="_blank">
+<h3>World History Encyclopedia</h3>
+<p>Articles covering world civilizations.</p>
+<span class="tag">History</span>
+</a>
+
+<a class="card" href="https://www.britannica.com" target="_blank">
+<h3>Britannica</h3>
+<p>Trusted encyclopedia.</p>
+<span class="tag">Reference</span>
+</a>
+
+<a class="card" href="https://fred.stlouisfed.org" target="_blank">
+<h3>FRED</h3>
+<p>Economic data from the Federal Reserve.</p>
+<span class="tag">Economics</span>
+</a>
+
+<a class="card" href="https://tradingeconomics.com" target="_blank">
+<h3>Trading Economics</h3>
+<p>Global economic indicators.</p>
+<span class="tag">Macro</span>
+</a>
+
+<a class="card" href="https://data.worldbank.org" target="_blank">
+<h3>World Bank Data</h3>
+<p>International development statistics.</p>
+<span class="tag">Economics</span>
+</a>
+
+<a class="card" href="https://data.imf.org" target="_blank">
+<h3>IMF Data</h3>
+<p>International Monetary Fund datasets.</p>
+<span class="tag">Economics</span>
+</a>
+
+<a class="card" href="https://data.oecd.org" target="_blank">
+<h3>OECD Data</h3>
+<p>Economic statistics from OECD countries.</p>
+<span class="tag">Economics</span>
+</a>
+
+<a class="card" href="https://www.bea.gov" target="_blank">
+<h3>BEA</h3>
+<p>U.S. GDP and national accounts.</p>
+<span class="tag">Macroeconomics</span>
+</a>
+
+<a class="card" href="https://www.bls.gov" target="_blank">
+<h3>BLS</h3>
+<p>Employment, CPI and labor statistics.</p>
+<span class="tag">Economics</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- RESEARCH -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>📖 Research</h2>
+
+<div class="grid">
+
+<a class="card" href="https://scholar.google.com" target="_blank">
+<h3>Google Scholar</h3>
+<p>Search scholarly articles and journals.</p>
+<span class="tag">Research</span>
+</a>
+
+<a class="card" href="https://www.semanticscholar.org" target="_blank">
+<h3>Semantic Scholar</h3>
+<p>AI-powered academic search engine.</p>
+<span class="tag">Papers</span>
+</a>
+
+<a class="card" href="https://core.ac.uk" target="_blank">
+<h3>CORE</h3>
+<p>Millions of open-access research papers.</p>
+<span class="tag">Open Access</span>
+</a>
+
+<a class="card" href="https://www.crossref.org" target="_blank">
+<h3>Crossref</h3>
+<p>Academic publication database.</p>
+<span class="tag">Citation</span>
+</a>
+
+<a class="card" href="https://arxiv.org" target="_blank">
+<h3>arXiv</h3>
+<p>Preprints in mathematics, computer science and physics.</p>
+<span class="tag">STEM</span>
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PROGRAMMING -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>💻 Programming</h2>
+
+<div class="grid">
+
+<a class="card" href="https://replit.com" target="_blank">
+<h3>Replit</h3>
+<p>Write and run code directly in your browser.</p>
+<span class="tag">Coding</span>
+<span class="tag">Python</span>
+</a>
+
+<a class="card" href="https://github.com" target="_blank">
+<h3>GitHub</h3>
+<p>Host code, collaborate on projects, and manage repositories.</p>
+<span class="tag">Version Control</span>
+</a>
+
+<a class="card" href="https://codepen.io" target="_blank">
+<h3>CodePen</h3>
+<p>Build HTML, CSS and JavaScript projects instantly.</p>
+<span class="tag">Web Development</span>
+</a>
+
+<a class="card" href="https://jsfiddle.net" target="_blank">
+<h3>JSFiddle</h3>
+<p>Quick online HTML/CSS/JavaScript playground.</p>
+<span class="tag">JavaScript</span>
+</a>
+
+<a class="card" href="https://www.w3schools.com" target="_blank">
+<h3>W3Schools</h3>
+<p>Programming tutorials for beginners.</p>
+<span class="tag">Learn</span>
+</a>
+
+<a class="card" href="https://developer.mozilla.org" target="_blank">
+<h3>MDN Web Docs</h3>
+<p>Official web development documentation.</p>
+<span class="tag">Reference</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ========================= -->
+<!-- AI -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>🤖 Artificial Intelligence</h2>
+
+<div class="grid">
+
+<a class="card" href="https://chat.openai.com" target="_blank">
+<h3>ChatGPT</h3>
+<p>AI assistant for learning, writing and problem solving.</p>
+<span class="tag">Recommended</span>
+</a>
+
+<a class="card" href="https://claude.ai" target="_blank">
+<h3>Claude</h3>
+<p>Long-form reasoning and document analysis.</p>
+<span class="tag">Writing</span>
+</a>
+
+<a class="card" href="https://gemini.google.com" target="_blank">
+<h3>Google Gemini</h3>
+<p>Google's AI assistant.</p>
+<span class="tag">Research</span>
+</a>
+
+<a class="card" href="https://www.perplexity.ai" target="_blank">
+<h3>Perplexity</h3>
+<p>AI-powered search engine with citations.</p>
+<span class="tag">Research</span>
+</a>
+
+<a class="card" href="https://copilot.microsoft.com" target="_blank">
+<h3>Microsoft Copilot</h3>
+<p>AI assistant from Microsoft.</p>
+<span class="tag">Productivity</span>
+</a>
+
+<a class="card" href="https://notebooklm.google.com" target="_blank">
+<h3>NotebookLM</h3>
+<p>Study and summarize your own documents with AI.</p>
+<span class="tag">Study</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- DESIGN -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>🎨 Design</h2>
+
+<div class="grid">
+
+<a class="card" href="https://www.canva.com" target="_blank">
+<h3>Canva</h3>
+<p>Create presentations, posters and graphics.</p>
+<span class="tag">Graphic Design</span>
+</a>
+
+<a class="card" href="https://www.figma.com" target="_blank">
+<h3>Figma</h3>
+<p>Professional interface and product design.</p>
+<span class="tag">UI/UX</span>
+</a>
+
+<a class="card" href="https://www.photopea.com" target="_blank">
+<h3>Photopea</h3>
+<p>Free online Photoshop alternative.</p>
+<span class="tag">Photo Editing</span>
+</a>
+
+<a class="card" href="https://pixlr.com" target="_blank">
+<h3>Pixlr</h3>
+<p>Quick online image editor.</p>
+<span class="tag">Graphics</span>
+</a>
+
+<a class="card" href="https://express.adobe.com" target="_blank">
+<h3>Adobe Express</h3>
+<p>Create social media graphics and posters.</p>
+<span class="tag">Creative</span>
+</a>
+
+<a class="card" href="https://inkscape.org" target="_blank">
+<h3>Inkscape</h3>
+<p>Professional free vector graphics editor.</p>
+<span class="tag">Logo Design</span>
+</a>
+
+<a class="card" href="https://www.linearity.io" target="_blank">
+<h3>Linearity Curve</h3>
+<p>Modern vector illustration software.</p>
+<span class="tag">Vector</span>
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PRODUCTIVITY -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>⏱ Productivity</h2>
+
+<div class="grid">
+
+<a class="card" href="https://pomofocus.io" target="_blank">
+<h3>Pomofocus</h3>
+<p>Pomodoro timer for focused study sessions.</p>
+<span class="tag">Timer</span>
+</a>
+
+<a class="card" href="https://www.forestapp.cc" target="_blank">
+<h3>Forest</h3>
+<p>Stay focused by growing virtual trees.</p>
+<span class="tag">Focus</span>
+</a>
+
+<a class="card" href="https://tomato-timer.com" target="_blank">
+<h3>Tomato Timer</h3>
+<p>Simple online Pomodoro timer.</p>
+<span class="tag">Study</span>
+</a>
+
+<a class="card" href="https://ticktick.com" target="_blank">
+<h3>TickTick</h3>
+<p>Tasks, reminders and calendar.</p>
+<span class="tag">Planning</span>
+</a>
+
+<a class="card" href="https://calendar.google.com" target="_blank">
+<h3>Google Calendar</h3>
+<p>Manage your schedule efficiently.</p>
+<span class="tag">Calendar</span>
+</a>
+
+<a class="card" href="https://calendar.notion.so" target="_blank">
+<h3>Notion Calendar</h3>
+<p>Beautiful productivity calendar.</p>
+<span class="tag">Organization</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- ========================= -->
+<!-- LEARNING -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>🎓 Learning</h2>
+
+<div class="grid">
+
+<a class="card" href="https://www.khanacademy.org" target="_blank">
+<h3>Khan Academy</h3>
+<p>Free lessons and practice.</p>
+<span class="tag">Free</span>
+</a>
+
+<a class="card" href="https://ocw.mit.edu" target="_blank">
+<h3>MIT OpenCourseWare</h3>
+<p>University-level courses.</p>
+<span class="tag">College</span>
+</a>
+
+<a class="card" href="https://www.coursera.org" target="_blank">
+<h3>Coursera</h3>
+<p>Courses from top universities.</p>
+<span class="tag">Certificates</span>
+</a>
+
+<a class="card" href="https://www.edx.org" target="_blank">
+<h3>edX</h3>
+<p>Professional online courses.</p>
+<span class="tag">Learning</span>
+</a>
+
+<a class="card" href="https://www.ted.com" target="_blank">
+<h3>TED</h3>
+<p>Ideas worth spreading.</p>
+<span class="tag">Videos</span>
+</a>
+
+<a class="card" href="https://thecrashcourse.com" target="_blank">
+<h3>Crash Course</h3>
+<p>Excellent educational video series.</p>
+<span class="tag">YouTube</span>
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!-- ========================= -->
+<!-- LANGUAGES -->
+<!-- ========================= -->
+
+<section class="category">
+
+<h2>🌐 Languages</h2>
+
+<div class="grid">
+
+<a class="card" href="https://www.deepl.com" target="_blank">
+<h3>DeepL</h3>
+<p>Professional translator.</p>
+<span class="tag">Translation</span>
+</a>
+
+<a class="card" href="https://translate.google.com" target="_blank">
+<h3>Google Translate</h3>
+<p>Translate over 100 languages.</p>
+<span class="tag">Translation</span>
+</a>
+
+<a class="card" href="https://dictionary.cambridge.org" target="_blank">
+<h3>Cambridge Dictionary</h3>
+<p>Official English dictionary.</p>
+<span class="tag">Vocabulary</span>
+</a>
+
+<a class="card" href="https://www.merriam-webster.com" target="_blank">
+<h3>Merriam-Webster</h3>
+<p>American English dictionary.</p>
+<span class="tag">English</span>
+</a>
+
+<a class="card" href="https://www.vocabulary.com" target="_blank">
+<h3>Vocabulary.com</h3>
+<p>Build vocabulary through quizzes.</p>
+<span class="tag">SAT</span>
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Volo Academy. All rights reserved.
+
+<br><br>
+
+Volo Workspace is a curated collection of educational tools.
+Each website belongs to its respective owner.
+
+</p>
+
+</footer>
+
+</div>
+
+<script>
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(function(card){
+
+let text=card.innerText.toLowerCase();
+
+if(text.includes(value)){
+
+card.style.display="block";
+
+}
+
+else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate([
+
+{opacity:0,transform:"translateY(40px)"},
+
+{opacity:1,transform:"translateY(0px)"}
+
+],{
+
+duration:600,
+
+fill:"forwards",
+
+easing:"ease"
+
+});
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card").forEach(card=>{
+
+observer.observe(card);
+
+});
+
+</script>
+
+</body>
+
+</html>
